@@ -43,5 +43,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HacenJordan.ttf</string>
+		<string>Hacen Saudi Arabia XL.ttf</string>
+	</array>
 </dict>
 </plist>

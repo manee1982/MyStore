@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663F6B7D20AB85CB00F028FE /* AfterTopRowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6B7C20AB85CB00F028FE /* AfterTopRowsCell.swift */; };
+		663F6B8020AB8C4000F028FE /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6B7F20AB8C4000F028FE /* Items.swift */; };
 		669460E8206ADDA000535871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669460E7206ADDA000535871 /* AppDelegate.swift */; };
 		669460EA206ADDA000535871 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669460E9206ADDA000535871 /* MainVC.swift */; };
 		669460ED206ADDA000535871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669460EB206ADDA000535871 /* Main.storyboard */; };
 		669460EF206ADDA000535871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669460EE206ADDA000535871 /* Assets.xcassets */; };
 		669460F2206ADDA000535871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669460F0206ADDA000535871 /* LaunchScreen.storyboard */; };
+		66F33FF320AF132C002EB18C /* Hacen Saudi Arabia XL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66F33FF020AF130C002EB18C /* Hacen Saudi Arabia XL.ttf */; };
+		66F33FF520AF13C4002EB18C /* TopRowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6B7A20AB85A700F028FE /* TopRowsCell.swift */; };
+		66F33FF620AF151F002EB18C /* HacenJordan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66F33FEF20AF130C002EB18C /* HacenJordan.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		663F6B7A20AB85A700F028FE /* TopRowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRowsCell.swift; sourceTree = "<group>"; };
+		663F6B7C20AB85CB00F028FE /* AfterTopRowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterTopRowsCell.swift; sourceTree = "<group>"; };
+		663F6B7F20AB8C4000F028FE /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		669460E4206ADDA000535871 /* MyStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669460E7206ADDA000535871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		669460E9206ADDA000535871 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -22,6 +30,8 @@
 		669460EE206ADDA000535871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669460F1206ADDA000535871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		669460F3206ADDA000535871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F33FEF20AF130C002EB18C /* HacenJordan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HacenJordan.ttf; sourceTree = "<group>"; };
+		66F33FF020AF130C002EB18C /* Hacen Saudi Arabia XL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hacen Saudi Arabia XL.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		663F6B7520AB830D00F028FE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				66F33FF020AF130C002EB18C /* Hacen Saudi Arabia XL.ttf */,
+				66F33FEF20AF130C002EB18C /* HacenJordan.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		663F6B7E20AB8C0B00F028FE /* Decodables */ = {
+			isa = PBXGroup;
+			children = (
+				663F6B7F20AB8C4000F028FE /* Items.swift */,
+			);
+			path = Decodables;
+			sourceTree = "<group>";
+		};
 		669460DB206ADDA000535871 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +81,8 @@
 		669460E6206ADDA000535871 /* MyStore */ = {
 			isa = PBXGroup;
 			children = (
+				663F6B7E20AB8C0B00F028FE /* Decodables */,
+				663F6B7520AB830D00F028FE /* Fonts */,
 				669460FC206ADEF600535871 /* Config */,
 				669460FB206ADE7E00535871 /* Models */,
 				669460FA206ADE6E00535871 /* Controllers */,
@@ -70,6 +99,8 @@
 		669460F9206ADE5A00535871 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				663F6B7A20AB85A700F028FE /* TopRowsCell.swift */,
+				663F6B7C20AB85CB00F028FE /* AfterTopRowsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,7 +154,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Smart Visions";
 				TargetAttributes = {
 					669460E3206ADDA000535871 = {
@@ -156,7 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				669460F2206ADDA000535871 /* LaunchScreen.storyboard in Resources */,
+				66F33FF620AF151F002EB18C /* HacenJordan.ttf in Resources */,
 				669460EF206ADDA000535871 /* Assets.xcassets in Resources */,
+				66F33FF320AF132C002EB18C /* Hacen Saudi Arabia XL.ttf in Resources */,
 				669460ED206ADDA000535871 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F33FF520AF13C4002EB18C /* TopRowsCell.swift in Sources */,
+				663F6B8020AB8C4000F028FE /* Items.swift in Sources */,
+				663F6B7D20AB85CB00F028FE /* AfterTopRowsCell.swift in Sources */,
 				669460EA206ADDA000535871 /* MainVC.swift in Sources */,
 				669460E8206ADDA000535871 /* AppDelegate.swift in Sources */,
 			);
@@ -209,6 +245,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -216,6 +253,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -266,6 +304,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -273,6 +312,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
