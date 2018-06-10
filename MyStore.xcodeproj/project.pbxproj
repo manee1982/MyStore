@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6602A90D20CBFF91005C8A0B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602A90C20CBFF91005C8A0B /* AppData.swift */; };
 		663F6B7D20AB85CB00F028FE /* AfterTopRowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6B7C20AB85CB00F028FE /* AfterTopRowsCell.swift */; };
 		663F6B8020AB8C4000F028FE /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6B7F20AB8C4000F028FE /* Items.swift */; };
 		669460E8206ADDA000535871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669460E7206ADDA000535871 /* AppDelegate.swift */; };
@@ -14,12 +15,14 @@
 		669460ED206ADDA000535871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669460EB206ADDA000535871 /* Main.storyboard */; };
 		669460EF206ADDA000535871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669460EE206ADDA000535871 /* Assets.xcassets */; };
 		669460F2206ADDA000535871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669460F0206ADDA000535871 /* LaunchScreen.storyboard */; };
+		66C78E2D20B60EC80026406E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C78E2C20B60EC80026406E /* CollectionViewCell.swift */; };
 		66F33FF320AF132C002EB18C /* Hacen Saudi Arabia XL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66F33FF020AF130C002EB18C /* Hacen Saudi Arabia XL.ttf */; };
 		66F33FF520AF13C4002EB18C /* TopRowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F6B7A20AB85A700F028FE /* TopRowsCell.swift */; };
 		66F33FF620AF151F002EB18C /* HacenJordan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66F33FEF20AF130C002EB18C /* HacenJordan.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6602A90C20CBFF91005C8A0B /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		663F6B7A20AB85A700F028FE /* TopRowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRowsCell.swift; sourceTree = "<group>"; };
 		663F6B7C20AB85CB00F028FE /* AfterTopRowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterTopRowsCell.swift; sourceTree = "<group>"; };
 		663F6B7F20AB8C4000F028FE /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		669460EE206ADDA000535871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669460F1206ADDA000535871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		669460F3206ADDA000535871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C78E2C20B60EC80026406E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		66F33FEF20AF130C002EB18C /* HacenJordan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HacenJordan.ttf; sourceTree = "<group>"; };
 		66F33FF020AF130C002EB18C /* Hacen Saudi Arabia XL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hacen Saudi Arabia XL.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +105,7 @@
 			children = (
 				663F6B7A20AB85A700F028FE /* TopRowsCell.swift */,
 				663F6B7C20AB85CB00F028FE /* AfterTopRowsCell.swift */,
+				66C78E2C20B60EC80026406E /* CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 		669460FB206ADE7E00535871 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6602A90C20CBFF91005C8A0B /* AppData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,9 +209,11 @@
 			files = (
 				66F33FF520AF13C4002EB18C /* TopRowsCell.swift in Sources */,
 				663F6B8020AB8C4000F028FE /* Items.swift in Sources */,
+				66C78E2D20B60EC80026406E /* CollectionViewCell.swift in Sources */,
 				663F6B7D20AB85CB00F028FE /* AfterTopRowsCell.swift in Sources */,
 				669460EA206ADDA000535871 /* MainVC.swift in Sources */,
 				669460E8206ADDA000535871 /* AppDelegate.swift in Sources */,
+				6602A90D20CBFF91005C8A0B /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

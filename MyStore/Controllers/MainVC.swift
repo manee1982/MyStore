@@ -29,8 +29,11 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row >= 2 {
+            tableView.rowHeight = 400
             tableView.register(AfterTopRowsCell.self, forCellReuseIdentifier: "afterTopRowsCell")
             if let cell = tableView.dequeueReusableCell(withIdentifier: "afterTopRowsCell") as? AfterTopRowsCell {
+                
+                cell.collectionView?.reloadData()
                 
                 return cell
             } else {
@@ -59,7 +62,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func getData() {
-        let url = URL(string: "http://192.168.1.107/store/main.php")
+        let url = URL(string: "http://192.168.1.104/store/main.php")
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if let error = error {
                 print("Error connecting to server \(error)")
@@ -73,8 +76,8 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         if let data = data {
                             do {
                                 let json = try JSONDecoder().decode([Items].self, from: data)
-                                print(json)
                                 self.items = json
+                                AppData.items = json
                                 DispatchQueue.main.async {
                                     self.tableView.reloadData()
                                 }

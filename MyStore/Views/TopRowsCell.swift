@@ -81,7 +81,7 @@ class TopRowsCell: UITableViewCell {
     }
     
     func getImageFromUrl(imageUrl: String) {
-        let url = URL(string: "http://192.168.1.107/store/" + imageUrl)
+        let url = URL(string: "http://192.168.1.104/store/" + imageUrl)
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if let error = error {
                 print("Error connecting to server \(error)")
