@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQf-70-NTc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQf-70-NTc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HacenJordan.ttf">
+            <string>HacenJordan</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--المتجر-->
         <scene sceneID="tne-QT-ifu">
@@ -20,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2wF-jT-O2z">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -51,13 +54,108 @@
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="-564.46776611694156"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="1i8-1n-gCt">
+            <objects>
+                <viewController id="eq1-cA-p7k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKt-E0-p1L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-Zb-JrI">
+                                <rect key="frame" x="20" y="20" width="335" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KLH-ZC-CGq">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xZ6-aZ-ugF">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wpx-Le-Lcq">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CXO-Qe-v69">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="173"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Se-tn-jJo">
+                                                    <rect key="frame" x="0.0" y="173" width="155" height="47"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ev1-Dw-cjF">
+                                                            <rect key="frame" x="108" y="0.0" width="47" height="47"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="47" id="MOI-5Y-eGF"/>
+                                                            </constraints>
+                                                            <state key="normal" image="heart"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فانيلا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0f-cl-yCE">
+                                                            <rect key="frame" x="5" y="5" width="98" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HacenJordan" family="Hacen Jordan" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اشتري الان ووفر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud4-qX-7vC">
+                                                            <rect key="frame" x="5" y="25" width="98" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HacenJordan" family="Hacen Jordan" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="y0f-cl-yCE" firstAttribute="top" secondItem="5Se-tn-jJo" secondAttribute="top" constant="5" id="6U7-aU-xH5"/>
+                                                        <constraint firstItem="ev1-Dw-cjF" firstAttribute="leading" secondItem="y0f-cl-yCE" secondAttribute="trailing" constant="5" id="Cny-nS-dSn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ev1-Dw-cjF" secondAttribute="trailing" id="ENh-WK-F7L"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ev1-Dw-cjF" secondAttribute="bottom" id="T2A-aB-GVI"/>
+                                                        <constraint firstItem="ud4-qX-7vC" firstAttribute="top" secondItem="y0f-cl-yCE" secondAttribute="bottom" constant="2" id="T3R-oL-Jft"/>
+                                                        <constraint firstItem="ev1-Dw-cjF" firstAttribute="leading" secondItem="ud4-qX-7vC" secondAttribute="trailing" constant="5" id="eqw-0g-KZi"/>
+                                                        <constraint firstAttribute="height" constant="47" id="pSn-D1-RWU"/>
+                                                        <constraint firstItem="ud4-qX-7vC" firstAttribute="leading" secondItem="5Se-tn-jJo" secondAttribute="leading" constant="5" id="rEY-cR-yPd"/>
+                                                        <constraint firstItem="y0f-cl-yCE" firstAttribute="leading" secondItem="5Se-tn-jJo" secondAttribute="leading" constant="5" id="v0P-Xk-TZJ"/>
+                                                        <constraint firstItem="ev1-Dw-cjF" firstAttribute="top" secondItem="5Se-tn-jJo" secondAttribute="top" id="zJh-os-o2F"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Se-tn-jJo" firstAttribute="leading" secondItem="Wpx-Le-Lcq" secondAttribute="leading" id="3Zy-ID-VyQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Se-tn-jJo" secondAttribute="trailing" id="6ad-vm-0A1"/>
+                                                <constraint firstItem="CXO-Qe-v69" firstAttribute="leading" secondItem="Wpx-Le-Lcq" secondAttribute="leading" id="AAn-SK-QF6"/>
+                                                <constraint firstItem="5Se-tn-jJo" firstAttribute="top" secondItem="CXO-Qe-v69" secondAttribute="bottom" id="DfI-vk-PtC"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Se-tn-jJo" secondAttribute="bottom" id="ZMm-K8-pBv"/>
+                                                <constraint firstItem="CXO-Qe-v69" firstAttribute="top" secondItem="Wpx-Le-Lcq" secondAttribute="top" id="dx3-vC-QpI"/>
+                                                <constraint firstAttribute="trailing" secondItem="CXO-Qe-v69" secondAttribute="trailing" id="khf-5F-lIj"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="155" height="220"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iMe-Zb-JrI" firstAttribute="top" secondItem="4Ds-7j-vIW" secondAttribute="top" constant="20" id="N4a-3f-cfZ"/>
+                            <constraint firstItem="4Ds-7j-vIW" firstAttribute="bottom" secondItem="iMe-Zb-JrI" secondAttribute="bottom" id="jaj-YA-Vw1"/>
+                            <constraint firstItem="iMe-Zb-JrI" firstAttribute="leading" secondItem="4Ds-7j-vIW" secondAttribute="leading" constant="20" id="lNv-U6-k63"/>
+                            <constraint firstItem="4Ds-7j-vIW" firstAttribute="trailing" secondItem="iMe-Zb-JrI" secondAttribute="trailing" constant="20" id="xVD-Kl-K63"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Ds-7j-vIW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygE-rX-3T0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.8" y="-564.46776611694156"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="r40-UQ-lKL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sQf-70-NTc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ktR-Gj-fXI">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -70,4 +168,7 @@
             <point key="canvasLocation" x="164" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart" width="47" height="47"/>
+    </resources>
 </document>
